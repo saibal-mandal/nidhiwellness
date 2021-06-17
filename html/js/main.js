@@ -177,3 +177,45 @@ $('#owldemo3').owlCarousel({
 
 // wow-js....
 AOS.init();
+
+/*==detail-slid js==*/
+  $('.detail-slid').owlCarousel({
+    loop:true,
+    margin:0,
+    navText : ["<i class='fas fa-angle-left'></i>","<i class='fas fa-angle-right'></i>"],
+    nav:true,
+    dots:false,
+    autoplay:5000,
+    smartSpeed: 950,
+    slideSpeed : 400,
+    paginationSpeed : 800,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+  
+/*==zoomimage==*/
+$(document).ready(function(){
+  $('.zoomimage').elevateZoom();
+});
+
+/*     click product images        */
+      $(document).ready(function(){
+        $('.slid-img').click(function(e){
+          e.preventDefault();
+          
+          var newImage = $(this).attr('href');
+          $('.zoompro img').attr('src', newImage);
+          var ez =   $('.zoomimage').data('elevateZoom');   
+          ez.swaptheimage(newImage, newImage); 
+
+        })
+      });
