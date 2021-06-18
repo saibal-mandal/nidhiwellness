@@ -316,11 +316,24 @@ opacity: 1;
 .iconbox i{
         font-size: 35px;
         color: #fff;
-    }    
-.firstboxbody p, .secndboxbody p{
+        transition: 0.5s;
+     -webkit-transition: 0.5s;
+     -moz-transition: 0.5s;
+    }  
+.iconbox i:hover{
+    color:var(--third-color);
+}      
+  
+.firstboxbody p a, .secndboxbody p a{
      color:#fff;
      font-size:22px;
-    }   
+     transition: 0.5s;
+     -webkit-transition: 0.5s;
+     -moz-transition: 0.5s;
+    }  
+.firstboxbody p a:hover, .secndboxbody p a:hover{
+     color:var(--third-color);
+    }        
 .firstboxbody p span, .secndboxbody p span{
     display: block;
 }   
@@ -1853,6 +1866,157 @@ border: 0px solid transparent;
 }
 .product-drce{
   margin: 0;
+}
+ /*===========================terms-condition===========================*/
+.terms-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.terms-condition .terms-box {
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+.terms-condition .terms-box:before {
+    position: absolute;
+    content: "Terms";
+    z-index: -1;
+    font-size: 40px;
+    color: var(--main-color);
+    opacity: 0.15;
+    top: 0;
+    left: 0;
+    text-shadow: 0px 1px 1px #ffffff;
+    transform: rotate(-17deg);
+}
+.terms-condition .terms-box h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: var(--third-color);
+}
+.terms-condition .terms-box p{
+    color: #636262;
+    font-weight: 300;
+}
+/*===========================Privacy Policy===========================*/
+.privacy-sec {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.privacy-policy .privacy-box {
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+.privacy-policy .privacy-box:before {
+    position: absolute;
+    content: "Privacy";
+    z-index: -1;
+    font-size: 40px;
+    color: var(--main-color);
+    opacity: 0.15;
+    top: 0;
+    left: 0;
+    text-shadow: 0px 1px 1px #ffffff;
+    transform: rotate(-17deg);
+}
+.privacy-policy .privacy-box h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: var(--third-color);
+}
+.privacy-policy .privacy-box p{
+    color: #636262;
+    font-weight: 300;
+}
+/*-----------courses---------------*/
+.course-inner .card.course-box{
+    margin-bottom: 50px;
+}
+.our-course .course-box .course-txt {
+    padding: 0 15px 10px;
+}
+.our-course .course-box .course-txt ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.our-course .course-box .course-txt p{
+  color: #333;
+}
+.our-course .course-box .course-txt p span{
+  display: block;
+  color: #cac9c9;
+  text-decoration: line-through;
+}
+
+/*=====================career===========================*/
+.career-left h3 {
+    color: var(--main-color);
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 26px;
+}
+.career-left p {
+    margin-bottom: 20px;
+}
+.career-left ul{}
+.career-left ul li {
+    position: relative;
+    padding-left: 30px;
+    padding-bottom: 8px;
+}
+.career-left ul li:before {
+    content: "\f111";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 10px;
+}
+.career-box {
+    padding: 25px;
+    background: #f1f1f1;
+    box-shadow: 0 2px 8px rgba(0,0,0, .1);
+}
+.career-box h3 {
+    padding: 0 0 25px 0;
+    font-size: 26px;
+    text-transform: capitalize;
+}
+.career-box .form-control {
+    display: block;
+    width: 100%;
+ padding: .375rem .75rem;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0;
+}
+.career-box textarea.form-control {
+    height: 85px;
+}
+.career-box .submit-btn {
+    border: 0px solid transparent;
+    padding: 10px 30px;
+    background: var(--main-color);
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    border-radius: 0;
+    transition: all ease-in-out 600ms;
+}
+.career-box .submit-btn:hover {
+    background: var(--second-color);
 }
 
 /*=====================responsive===========================*/
