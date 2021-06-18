@@ -2018,7 +2018,235 @@ border: 0px solid transparent;
 .career-box .submit-btn:hover {
     background: var(--second-color);
 }
-
+/*=================login area====================*/
+.login-area {
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    min-height: 100vh;
+    z-index: 999;
+    opacity: 1;
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    background: url(../images/pixel.png);
+}
+.login-area .login-inner-form {
+    color: #272323;
+    text-align: center;
+}
+.login-area .col-pad-0 {
+    padding: 0;
+}
+.login-area .login-inner-form .details p {
+    color: #403838;
+    font-weight: 400;
+    font-size: 15px;
+}
+.login-area .login-inner-form .details p a {
+    margin-left: 3px;
+    color: #403838;
+}
+.login-area .login-inner-form .details p {
+    margin-bottom: 0;
+}
+.login-area .login-inner-form .details {
+    padding: 30px 0 30px 60px;
+}
+.login-area .bg-img {
+    background-size: cover;
+    width: 100%;
+    bottom: 0;
+    border-radius: 10px;
+    padding: 80px 20px;
+    background: var(--third-color);
+    margin: 30px 0;
+    right: -60px;
+    z-index: 999;
+}
+.login-box-12 {
+    margin: 0 200px 0 150px;
+    max-width: 700px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.04) url(../images/bg-image.jpg) top left repeat;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    opacity: 1;
+    text-align: center;
+}
+.login-area .btn-outline {
+    border-radius: 3px;
+    padding: 6px 30px 6px 30px;
+    color: var(--mai-color);
+    background: #fff;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.login-area .none-2 {
+    display: none;
+}
+.login-area .btn-outline:hover {
+    background: #ecebeb;
+    text-decoration: none;
+}
+.login-area .login-inner-form h3 {
+    margin: 0 0 25px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #272323;
+}
+.login-area .login-inner-form .form-group {
+    margin-bottom: 20px;
+}
+.login-area .login-inner-form .input-text {
+    outline: none;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 15px;
+    outline: 0;
+    font-weight: 500;
+    color: #717171;
+    height: 45px;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .06);
+}
+.login-area .login-inner-form .btn-md {
+    cursor: pointer;
+    padding: 10px 50px 8px 50px;
+    height: 45px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+.login-area .bg-img .social-list li {
+    display: inline-block;
+    font-size: 16px;
+}
+.login-area .bg-img .logo {
+    margin-bottom: 20px;
+}
+.login-area .bg-img p {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.login-area .bg-img .btn-sm {
+    padding: 6px 20px 6px 20px;
+    font-size: 13px;
+}
+.login-area .bg-img .social-list {
+    margin-top: 35px;
+    padding: 0;
+}
+.login-area .bg-img .social-list li a {
+    margin: 0 5px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 3px;
+    display: inline-block;
+}
+.login-area .bg-img .social-list li a:hover {
+    color: #ecebeb;
+}
+.login-area .login-inner-form input[type=checkbox], input[type=radio] {
+    margin-right: 3px;
+}
+.login-area .login-inner-form button:focus {
+    outline: none;
+    outline: 0 auto -webkit-focus-ring-color;
+}
+.login-area .login-inner-form .btn-theme.focus, .btn-theme:focus {
+    box-shadow: none;
+}
+.login-area .login-inner-form .btn-theme {
+    background: var(--main-color);
+    border: none;
+    color: #fff;
+}
+.login-area .login-inner-form .btn-theme:hover {
+    background: var(--second-color);
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+}
+.login-area .login-inner-form .terms {
+    margin-left: 3px;
+}
+.login-area .login-inner-form .checkbox {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.login-area .login-inner-form .form-check {
+    float: left;
+    margin-bottom: 0;
+}
+.login-area .login-inner-form .form-check a {
+    color: #717171;
+    float: right;
+}
+.login-area .login-inner-form .form-check-input {
+    position: absolute;
+    margin-left: 0;
+}
+.login-area .login-inner-form .form-check label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    margin-left: -25px;
+    border: 1px solid #c5c3c3;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.login-area .login-inner-form .form-check-label {
+    padding-left: 25px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #403838;
+}
+.login-area .login-inner-form .checkbox-theme input[type="checkbox"]:checked + label::before {
+    background-color: var(--mai-color);
+    border-color: var(--mai-color);
+}
+.login-area .login-inner-form input[type=checkbox]:checked + label:before {
+    font-weight: 300;
+    color: #f3f3f3;
+    line-height: 15px;
+    font-size: 14px;
+    content: "\2713";
+}
+.login-area .login-inner-form input[type=checkbox], input[type=radio] {
+    margin-top: 4px;
+}
+.login-area .login-inner-form .checkbox a {
+    font-size: 14px;
+    color: #403838;
+    float: right;
+}
+ @media (max-width: 992px) {
+.login-area .none-992 {
+    display: none;
+}
+.login-area .pad-0 {
+    padding: 0;
+}
+.login-area .login-box-12 {
+    margin: 0 auto;
+    max-width: 400px;
+}
+.login-area .login-inner-form .details {
+    padding: 30px;
+}
+}
 /*=====================responsive===========================*/
 @media screen and (max-width: 1199px){
   .navbar-nav .nav-link {
